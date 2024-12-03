@@ -1,10 +1,8 @@
 package by.dominos.api;
 
-import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class LoginTest {
@@ -13,32 +11,35 @@ public class LoginTest {
     @DisplayName("тест: вход без ввода номера телефона")
     public void noPhone() {
 
-        DominosApi dominosApi = new DominosApi();
-        ValidatableResponse response = dominosApi.getResponsePhone(" ");
+        ValidatableResponse response = new DominosApi()
+                .getResponsePhone(String.valueOf(Phone.EMPTY_PHONE.getLabel()));
+
         response
                 .statusCode(400)
-                .body("phone[0]", equalTo("Это поле не может быть пустым."));
+                .body("phone[0]", equalTo(LoginMessage.LOGIN_EMPTY_NUMBER_PHONE));
     }
 
     @Test
     @DisplayName("тест: вход с некоректным номером телефона")
     public void incorrectPhone() {
 
-        DominosApi dominosApi = new DominosApi();
-        ValidatableResponse response = dominosApi.getResponsePhone("375298564032");
+        ValidatableResponse response = new DominosApi()
+                .getResponsePhone(String.valueOf(Phone.INCORRECT_PHONE.getLabel()));
 
         response
                 .statusCode(400)
-                .body("phone[0]", equalTo("Введите корректный номер телефона."));
+                .body("phone[0]", equalTo(LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE));
     }
 
     @Test
     @DisplayName("тест: вход с коректным номером телефона")
     public void correctPhone() {
 
-        DominosApi dominosApi = new DominosApi();
-        ValidatableResponse response = dominosApi.getResponsePhone("+375298564032");
+        ValidatableResponse response = new DominosApi()
+                .getResponsePhone(String.valueOf(Phone.CORRECT_PHONE.getLabel()));
+
         response
-                .statusCode(200);
+                .statusCode(200)
+                .body("text", equalTo(LoginMessage.LOGIN_CORRECT_NUMBER_PHONE));
     }
 }
