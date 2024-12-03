@@ -8,13 +8,10 @@ import org.apache.logging.log4j.Logger;
 import static io.restassured.RestAssured.given;
 
 public class DominosApi {
-
     private static final Logger logger = LogManager.getLogger();
 
     public ValidatableResponse getResponsePhone(String phone) {
-
         logger.info("DominosApi - getResponsePhone");
-
         ValidatableResponse response =
                 given()
                     .body(LoginRequest.getBody(phone))

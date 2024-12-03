@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class Singleton {
-
     private static WebDriver driver;
 
     private Singleton() {
