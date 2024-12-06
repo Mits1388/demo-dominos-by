@@ -1,4 +1,4 @@
-package by.dominos.ui.page;
+package by.dominos.ui.pages;
 
 import by.dominos.ui.webdriver.Singleton;
 import org.openqa.selenium.WebDriver;

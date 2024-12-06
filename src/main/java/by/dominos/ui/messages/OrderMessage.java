@@ -1,4 +1,4 @@
-package by.dominos.ui;
+package by.dominos.ui.messages;
 
 public class OrderMessage {
     public static final String ORDER_CHICKEN_WITH_CHAMPIGNONS = "Цыпленок с шампиньонами";
