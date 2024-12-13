@@ -22,7 +22,7 @@ public class SwitchingToSiteTest {
     public void switchingInstagram(){
         switching
                 .clickingToInstagram();
-        Assertions.assertEquals(SwitchingToSiteMessage.INSTAGRAM_LINK, new SwitchToWindow().switchToWindow());
+        Assertions.assertEquals(SwitchingToSiteMessage.INSTAGRAM_LINK, new SwitchToWindow().switchToWindow(Singleton.getDriver()));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class SwitchingToSiteTest {
     public void switchingFacebook(){
         switching
                 .clickingToFacebook();
-        Assertions.assertEquals(SwitchingToSiteMessage.FACEBOOK_LINK, new SwitchToWindow().switchToWindow());
+        Assertions.assertEquals(SwitchingToSiteMessage.FACEBOOK_LINK, new SwitchToWindow().switchToWindow(Singleton.getDriver()));
     }
 
     @Test
@@ -38,7 +38,7 @@ public class SwitchingToSiteTest {
     public void switchingTiktok(){
         switching
                 .clickingToTiktok();
-        Assertions.assertEquals(SwitchingToSiteMessage.TIKTOK_LINK, new SwitchToWindow().switchToWindow());
+        Assertions.assertEquals(SwitchingToSiteMessage.TIKTOK_LINK, new SwitchToWindow().switchToWindow(Singleton.getDriver()));
     }
 
     @AfterEach

@@ -3,7 +3,6 @@ package by.dominos.ui;
 import by.dominos.ui.messages.OrderMessage;
 import by.dominos.ui.pages.HomePage;
 import by.dominos.ui.pages.OrderPage;
-import by.dominos.ui.webdriver.Singleton;
 import org.junit.jupiter.api.*;
 
 public class OrderTest {
@@ -31,18 +30,6 @@ public class OrderTest {
 
     @AfterEach
     public void tearDown() {
-        Singleton.quit();
+       // Singleton.quit();
     }
 }
-
-
-  /*  public static void switchToWindow(WebDriver driver){
-        String originalWindow = driver.getWindowHandle();
-        Set<String> allWindows = driver.getWindowHandles();
-        for (String windowHandle : allWindows) {
-            if (!windowHandle.equals(originalWindow)) {
-                driver.switchTo().window(windowHandle);
-                break;
-            }
-        }
-    }*/

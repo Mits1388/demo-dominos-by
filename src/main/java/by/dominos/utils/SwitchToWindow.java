@@ -5,13 +5,8 @@ import org.openqa.selenium.WebDriver;
 import java.util.Set;
 
 public class SwitchToWindow {
-    private WebDriver driver;
 
-    public SwitchToWindow() {
-        this.driver = Singleton.getDriver();
-    }
-
-    public String switchToWindow() {
+    public String switchToWindow(WebDriver driver) {
 
         String originalWindow = driver.getWindowHandle();
         Set<String> allWindows = driver.getWindowHandles();
