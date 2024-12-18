@@ -19,7 +19,7 @@ public class PizzaConstructorXpath {
 
 
     public static final String CHICKEN_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[5]/div[1]";
-    public static final String SHRIMPS_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[3]/div[1]";
+    public static final String SHRIMPS_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[4]/div[1]";
     public static final String SWEET_PEPPER_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[6]/div[1]";
     public static final String PINEAPPLE_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[4]/div[1]";
     public static final String MOZZARELLA_CHEESE_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[3]/div";

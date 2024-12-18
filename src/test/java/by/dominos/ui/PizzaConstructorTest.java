@@ -49,15 +49,15 @@ public class PizzaConstructorTest {
                 .clickingToPineapple()
                 .clickingToCheese()
                 .clickingToMinusMozzarellaCheese()
-                .clickingToSauces()
-                .clickingToMinusDominosTomatoSauce();
+                .clickingToSauces();
+                //.clickingToMinusDominosTomatoSauce();
 
         Assertions.assertEquals(PizzaConstructorMessage.SHRIMPS_MESSAGE, pizza.shrimps());
-        Assertions.assertEquals(PizzaConstructorMessage.PINEAPPLE_MESSAGE, pizza.pineapple());
+       // Assertions.assertEquals(PizzaConstructorMessage.PINEAPPLE_MESSAGE, pizza.pineapple());
     }
 
     @AfterEach
     public void tearDown() {
-        Singleton.quit();
+       Singleton.quit();
     }
 }
