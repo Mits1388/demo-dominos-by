@@ -13,7 +13,7 @@ public class SwitchingToSitePage {
         this.driver = Singleton.getDriver();
     }
 
-    public SwitchingToSitePage clickingToInstagram(){
+    public SwitchingToSitePage clickingToInstagram() {
         new ScrollToBoottom().scrollToBoottom(driver);
         driver.findElement(By.xpath(SwitchingToSiteXpath.CLICK_INSTAGRAM_XPATH)).click();
         return this;

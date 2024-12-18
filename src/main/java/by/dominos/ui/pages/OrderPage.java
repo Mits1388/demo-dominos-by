@@ -59,6 +59,4 @@ public class OrderPage {
         WebElement element = driver.findElement(by);
         return element.getText();
     }
-
-
 }

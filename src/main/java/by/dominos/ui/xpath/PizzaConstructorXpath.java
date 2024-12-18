@@ -11,9 +11,20 @@ public class PizzaConstructorXpath {
     public static final String CLICK_SAUCES_XPATH = "//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[6]";
     public static final String CLICK_CHICKEN_XPATH = "//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/button";
     public static final String CLICK_SHRIMPS_XPATH = "//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[2]/div[2]/div/button";
-    public static final String CLICK_SWEET_PEPPER_XPATH = "//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[3]/div[2]/div[2]/button";
+    public static final String CLICK_SWEET_PEPPER_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[3]/div[2]/div[2]/button";
     public static final String CLICK_PINEAPPLE_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/button";
     public static final String CLICK_MINUS_MOZZARELLA_CHEESE_XPATH = "//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[5]/div[2]/div[2]/div[3]/button[1]";
-    public static final String CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH = "//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[6]/div[2]/div[4]/div[3]/button[1]";
+    public static final String CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[6]/div[2]/div[4]/div[3]/button[1]";
     public static final String CLICK_FRIED_ONIONS_XPATH = "//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[4]/div[2]/div[3]/button";
+
+
+    public static final String CHICKEN_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[5]/div[1]";
+    public static final String SHRIMPS_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[3]/div[1]";
+    public static final String SWEET_PEPPER_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[6]/div[1]";
+    public static final String PINEAPPLE_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[4]/div[1]";
+    public static final String MOZZARELLA_CHEESE_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[3]/div";
+    public static final String DOMINOS_TOMATO_SAUCE_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[4]/div";
+    public static final String FRIED_ONIONS_XPATH = "/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[4]/div[7]/div[1]";
+
+
 }

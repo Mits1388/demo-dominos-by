@@ -1,5 +1,6 @@
 package by.dominos.ui;
 
+import by.dominos.ui.messages.PizzaConstructorMessage;
 import by.dominos.ui.pages.HomePage;
 import by.dominos.ui.pages.PizzaConstructorPage;
 import by.dominos.ui.webdriver.Singleton;
@@ -29,7 +30,11 @@ public class PizzaConstructorTest {
                 .clickingToProducts()
                 .clickingToFriedOnions();
 
-        //  Assertions.assertEquals(SwitchingToSiteMessage.INSTAGRAM_LINK, new SwitchToWindow().switchToWindow(Singleton.getDriver()));
+        Assertions.assertEquals(PizzaConstructorMessage.MOZZARELLA_CHEESE_MESSAGE, pizza.mozzarellaCheese());
+        Assertions.assertEquals(PizzaConstructorMessage.DOMINOS_TOMATO_SAUCE_MESSAGE, pizza.dominosTomatoSauce());
+        Assertions.assertEquals(PizzaConstructorMessage.SWEET_PEPPER_MESSAGE, pizza.sweetPepper());
+        Assertions.assertEquals(PizzaConstructorMessage.FRIED_ONIONS_MESSAGE, pizza.friedOnions());
+        Assertions.assertEquals(PizzaConstructorMessage.CHICKEN_MESSAGE, pizza.chicken());
     }
 
     @Test
@@ -47,7 +52,8 @@ public class PizzaConstructorTest {
                 .clickingToSauces()
                 .clickingToMinusDominosTomatoSauce();
 
-        //  Assertions.assertEquals(SwitchingToSiteMessage.INSTAGRAM_LINK, new SwitchToWindow().switchToWindow(Singleton.getDriver()));
+        Assertions.assertEquals(PizzaConstructorMessage.SHRIMPS_MESSAGE, pizza.shrimps());
+        Assertions.assertEquals(PizzaConstructorMessage.PINEAPPLE_MESSAGE, pizza.pineapple());
     }
 
     @AfterEach
