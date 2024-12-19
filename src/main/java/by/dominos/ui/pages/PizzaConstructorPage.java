@@ -6,7 +6,9 @@ import by.dominos.ui.xpath.PizzaConstructorXpath;
 import by.dominos.utils.ScrollToBoottom;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -100,16 +102,31 @@ public class PizzaConstructorPage {
     }
 
     public PizzaConstructorPage clickingToMinusDominosTomatoSauce() {
-        new ScrollToBoottom().scrollToBoottom(driver);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH))).click();
+        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",element);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        element.click();
+        // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+       // wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH))).click();
         return this;
     }
 
     public PizzaConstructorPage clickingToFriedOnions() {
-        new ScrollToBoottom().scrollToBoottom(driver);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_FRIED_ONIONS_XPATH))).click();
+        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_FRIED_ONIONS_XPATH));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",element);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        element.click();
+       // new ScrollToBoottom().scrollToBoottom(driver);
+       // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+       // wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_FRIED_ONIONS_XPATH))).click();
         return this;
     }
 
@@ -139,12 +156,29 @@ public class PizzaConstructorPage {
     }
 
     public String shrimps() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.SHRIMPS_XPATH))).getText();
+        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.SHRIMPS_XPATH));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",element);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return element.getText();
+
+       // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+       // return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.SHRIMPS_XPATH))).getText();
     }
 
     public String pineapple() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.PINEAPPLE_XPATH))).getText();
+        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.PINEAPPLE_XPATH));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",element);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return element.getText();
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+       // return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.PINEAPPLE_XPATH))).getText();
     }
 }
