@@ -51,7 +51,6 @@ public class PizzaConstructorTest {
                 .clickingToMinusMozzarellaCheese()
                 .clickingToSauces();
                 //.clickingToMinusDominosTomatoSauce();
-
         Assertions.assertEquals(PizzaConstructorMessage.SHRIMPS_MESSAGE, pizza.shrimps());
        // Assertions.assertEquals(PizzaConstructorMessage.PINEAPPLE_MESSAGE, pizza.pineapple());
     }
