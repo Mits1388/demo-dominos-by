@@ -43,3 +43,48 @@
 2024-12-19 20:37:23,693 INFO b.d.a.LoginRequest [main] LoginRequest - getBody:  
 2024-12-19 20:37:23,912 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_EMPTY_NUMBER_PHONE = Это поле не может быть пустым.
 2024-12-19 20:37:23,920 INFO b.d.a.LoginTest [main] Конец теста: noPhone() - вход без ввода номера телефона
+2024-12-19 21:34:31,042 INFO b.d.a.LoginTest [main] Начало теста: correctPhone() - вход с коректным номером телефона
+2024-12-19 21:34:31,047 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:34:31,425 INFO b.d.a.LoginRequest [main] LoginRequest - getBody: +375298564032
+2024-12-19 21:34:32,494 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_CORRECT_NUMBER_PHONE = Введите, пожалуйста, код подтверждения, присланный на номер +375298564032
+2024-12-19 21:34:32,945 INFO b.d.a.LoginTest [main] Конец теста: correctPhone() - вход с коректным номером телефона
+2024-12-19 21:34:32,955 INFO b.d.a.LoginTest [main] Начало теста: incorrectPhone() - вход с некоректным номером телефона
+2024-12-19 21:34:32,955 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:34:32,956 INFO b.d.a.LoginRequest [main] LoginRequest - getBody: 375298564032
+2024-12-19 21:34:33,106 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE = Введите корректный номер телефона.
+2024-12-19 21:34:33,145 INFO b.d.a.LoginTest [main] Конец теста: incorrectPhone() - вход с некоректным номером телефона
+2024-12-19 21:34:33,146 INFO b.d.a.LoginTest [main] Начало теста: noPhone() - вход без ввода номера телефона
+2024-12-19 21:34:33,147 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:34:33,147 INFO b.d.a.LoginRequest [main] LoginRequest - getBody:  
+2024-12-19 21:34:33,294 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_EMPTY_NUMBER_PHONE = Это поле не может быть пустым.
+2024-12-19 21:34:33,303 INFO b.d.a.LoginTest [main] Конец теста: noPhone() - вход без ввода номера телефона
+2024-12-19 21:37:12,657 INFO b.d.a.LoginTest [main] Начало теста: correctPhone() - вход с коректным номером телефона
+2024-12-19 21:37:12,660 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:37:13,032 INFO b.d.a.LoginRequest [main] LoginRequest - getBody: +375298564032
+2024-12-19 21:37:14,031 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_CORRECT_NUMBER_PHONE = Введите, пожалуйста, код подтверждения, присланный на номер +375298564032
+2024-12-19 21:37:14,485 INFO b.d.a.LoginTest [main] Конец теста: correctPhone() - вход с коректным номером телефона
+2024-12-19 21:37:14,497 INFO b.d.a.LoginTest [main] Начало теста: incorrectPhone() - вход с некоректным номером телефона
+2024-12-19 21:37:14,497 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:37:14,498 INFO b.d.a.LoginRequest [main] LoginRequest - getBody: 375298564032
+2024-12-19 21:37:14,665 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE = Введите корректный номер телефона.
+2024-12-19 21:37:14,705 INFO b.d.a.LoginTest [main] Конец теста: incorrectPhone() - вход с некоректным номером телефона
+2024-12-19 21:37:14,707 INFO b.d.a.LoginTest [main] Начало теста: noPhone() - вход без ввода номера телефона
+2024-12-19 21:37:14,707 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:37:14,708 INFO b.d.a.LoginRequest [main] LoginRequest - getBody:  
+2024-12-19 21:37:14,985 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_EMPTY_NUMBER_PHONE = Это поле не может быть пустым.
+2024-12-19 21:37:14,993 INFO b.d.a.LoginTest [main] Конец теста: noPhone() - вход без ввода номера телефона
+2024-12-19 21:39:49,143 INFO b.d.a.LoginTest [main] Начало теста: correctPhone() - вход с коректным номером телефона
+2024-12-19 21:39:49,147 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:39:49,517 INFO b.d.a.LoginRequest [main] LoginRequest - getBody: +375298564032
+2024-12-19 21:39:50,571 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_CORRECT_NUMBER_PHONE = Введите, пожалуйста, код подтверждения, присланный на номер +375298564032
+2024-12-19 21:39:51,006 INFO b.d.a.LoginTest [main] Конец теста: correctPhone() - вход с коректным номером телефона
+2024-12-19 21:39:51,015 INFO b.d.a.LoginTest [main] Начало теста: incorrectPhone() - вход с некоректным номером телефона
+2024-12-19 21:39:51,015 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:39:51,015 INFO b.d.a.LoginRequest [main] LoginRequest - getBody: 375298564032
+2024-12-19 21:39:51,373 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE = Введите корректный номер телефона.
+2024-12-19 21:39:51,413 INFO b.d.a.LoginTest [main] Конец теста: incorrectPhone() - вход с некоректным номером телефона
+2024-12-19 21:39:51,415 INFO b.d.a.LoginTest [main] Начало теста: noPhone() - вход без ввода номера телефона
+2024-12-19 21:39:51,415 INFO b.d.a.DominosApi [main] DominosApi - getResponsePhone
+2024-12-19 21:39:51,415 INFO b.d.a.LoginRequest [main] LoginRequest - getBody:  
+2024-12-19 21:39:51,642 INFO b.d.a.LoginTest [main] LoginMessage.LOGIN_EMPTY_NUMBER_PHONE = Это поле не может быть пустым.
+2024-12-19 21:39:51,650 INFO b.d.a.LoginTest [main] Конец теста: noPhone() - вход без ввода номера телефона
