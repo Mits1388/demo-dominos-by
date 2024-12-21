@@ -1,13 +1,9 @@
 package by.dominos.ui.pages;
 
-import by.dominos.ui.messages.PizzaConstructorMessage;
 import by.dominos.ui.webdriver.Singleton;
 import by.dominos.ui.xpath.PizzaConstructorXpath;
-import by.dominos.utils.ScrollToBoottom;
 import by.dominos.utils.ScrollToElement;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
