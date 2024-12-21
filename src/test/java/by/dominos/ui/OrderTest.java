@@ -6,6 +6,7 @@ import by.dominos.ui.pages.OrderPage;
 import by.dominos.ui.webdriver.Singleton;
 import org.junit.jupiter.api.*;
 
+
 public class OrderTest {
     private OrderPage page;
 
