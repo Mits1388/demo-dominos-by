@@ -23,7 +23,8 @@ public class PizzaConstructorPage {
     }
 
     public PizzaConstructorPage clickingToBurger() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_BURGER_XPATH))).click();
         return this;
     }
@@ -141,18 +142,43 @@ public class PizzaConstructorPage {
     }
 
     public String sweetPepper() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PizzaConstructorXpath.SWEET_PEPPER_XPATH))).getText();
+        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.SWEET_PEPPER_XPATH));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",element);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return element.getText();
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        //return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PizzaConstructorXpath.SWEET_PEPPER_XPATH))).getText();
     }
 
     public String friedOnions() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PizzaConstructorXpath.FRIED_ONIONS_XPATH))).getText();
+        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.FRIED_ONIONS_XPATH));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",element);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return element.getText();
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        //return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PizzaConstructorXpath.FRIED_ONIONS_XPATH))).getText();
     }
 
     public String chicken() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PizzaConstructorXpath.CHICKEN_XPATH))).getText();
+        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CHICKEN_XPATH));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",element);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return element.getText();
+
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+       //return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PizzaConstructorXpath.CHICKEN_XPATH))).getText();
     }
 
     public String shrimps() {
