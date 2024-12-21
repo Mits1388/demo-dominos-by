@@ -24,11 +24,11 @@ public class PizzaConstructorPage {
     }
 
     public PizzaConstructorPage clickingToBurger() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_BURGER_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_BURGER_XPATH))).click();
+       // WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_BURGER_XPATH));
+        //new ScrollToElement().scrollToElement(driver,element);
+       // element.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_BURGER_XPATH))).click();
         return this;
     }
 
@@ -69,11 +69,11 @@ public class PizzaConstructorPage {
     }
 
     public PizzaConstructorPage clickingToProducts() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_PRODUCTS_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-       // wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_PRODUCTS_XPATH))).click();
+        //WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_PRODUCTS_XPATH));
+        //new ScrollToElement().scrollToElement(driver,element);
+        //element.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_PRODUCTS_XPATH))).click();
         return this;
     }
 
@@ -96,57 +96,57 @@ public class PizzaConstructorPage {
     }
 
     public PizzaConstructorPage clickingToChicken() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_CHICKEN_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
-        // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_CHICKEN_XPATH))).click();
+        //WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_CHICKEN_XPATH));
+        //new ScrollToElement().scrollToElement(driver,element);
+        //element.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_CHICKEN_XPATH))).click();
         return this;
     }
 
     public PizzaConstructorPage clickingToShrimps() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_SHRIMPS_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_SHRIMPS_XPATH))).click();
+       //WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_SHRIMPS_XPATH));
+        //new ScrollToElement().scrollToElement(driver,element);
+       // element.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_SHRIMPS_XPATH))).click();
         return this;
     }
 
     public PizzaConstructorPage clickingToSweetPepper() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_SWEET_PEPPER_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_SWEET_PEPPER_XPATH))).click();
+        //WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_SWEET_PEPPER_XPATH));
+        //new ScrollToElement().scrollToElement(driver,element);
+        //element.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_SWEET_PEPPER_XPATH))).click();
         return this;
     }
 
     public PizzaConstructorPage clickingToPineapple() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_PINEAPPLE_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
+        //WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_PINEAPPLE_XPATH));
+       //new ScrollToElement().scrollToElement(driver,element);
+        //element.click();
         //new ScrollToBoottom().scrollToBoottom(driver);
-       // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_PINEAPPLE_XPATH))).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_PINEAPPLE_XPATH))).click();
         return this;
     }
 
     public PizzaConstructorPage clickingToMinusMozzarellaCheese() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_MINUS_MOZZARELLA_CHEESE_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_MINUS_MOZZARELLA_CHEESE_XPATH))).click();
+        //WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_MINUS_MOZZARELLA_CHEESE_XPATH));
+        //new ScrollToElement().scrollToElement(driver,element);
+        //element.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_MINUS_MOZZARELLA_CHEESE_XPATH))).click();
         return this;
     }
 
     public PizzaConstructorPage clickingToMinusDominosTomatoSauce() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH));
-        new ScrollToElement().scrollToElement(driver,element);
-        element.click();
-        // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-       // wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH))).click();
+        //WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH));
+        //new ScrollToElement().scrollToElement(driver,element);
+        //element.click();
+         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH))).click();
         return this;
     }
 
@@ -201,7 +201,6 @@ public class PizzaConstructorPage {
     }
 
     public String pineapple() {
-
         WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.PINEAPPLE_XPATH));
         new ScrollToElement().scrollToElement(driver,element);
         return element.getText();
