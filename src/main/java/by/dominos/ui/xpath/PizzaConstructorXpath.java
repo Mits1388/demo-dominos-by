@@ -10,7 +10,7 @@ public class PizzaConstructorXpath {
     public static final String CLICK_CHEESE_XPATH = "//div[text() = \"Сыр\"]";
     public static final String CLICK_SAUCES_XPATH = "//div[text() = \"Соусы\"]";
     public static final String CLICK_CHICKEN_XPATH = "(//div[@class='topping-items'])[1]//div[2]//button[1]";
-    public static final String CLICK_SHRIMPS_XPATH ="(//div[@class='topping-items'])[1]//div[1]//button[1]";
+    public static final String CLICK_SHRIMPS_XPATH = "(//div[@class='topping-items'])[1]//div[1]//button[1]";
     public static final String CLICK_SWEET_PEPPER_XPATH = "(//div[@class='topping-items'])[2]//div[2]//button[1]";
     public static final String CLICK_PINEAPPLE_XPATH = "(//div[@class='topping-items'])[2]//div[1]//button[1]";
     public static final String CLICK_MINUS_MOZZARELLA_CHEESE_XPATH = "(//div[@class='topping-items'])[3]//div[2]//button[1]";
