@@ -13,7 +13,7 @@ import java.time.Duration;
 
 
 public class PizzaConstructorPage {
-    private WebDriver driver;
+    final private WebDriver driver;
 
     public PizzaConstructorPage() {
         this.driver = Singleton.getDriver();
