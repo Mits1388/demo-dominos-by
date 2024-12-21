@@ -57,6 +57,6 @@ public class PizzaConstructorTest {
 
     @AfterEach
     public void tearDown() {
-       Singleton.quit();
+       //Singleton.quit();
     }
 }
