@@ -31,6 +31,6 @@ public class OrderTest {
 
     @AfterEach
     public void tearDown() {
-        Singleton.quit();
+        //Singleton.quit();
     }
 }
