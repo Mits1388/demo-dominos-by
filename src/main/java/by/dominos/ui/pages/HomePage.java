@@ -4,7 +4,7 @@ import by.dominos.ui.webdriver.Singleton;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public HomePage() {
         driver = Singleton.getDriver();

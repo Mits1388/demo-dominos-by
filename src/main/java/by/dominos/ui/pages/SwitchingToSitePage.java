@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class SwitchingToSitePage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public SwitchingToSitePage() {
         this.driver = Singleton.getDriver();

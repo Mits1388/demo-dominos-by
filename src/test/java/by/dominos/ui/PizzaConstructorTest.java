@@ -40,7 +40,7 @@ public class PizzaConstructorTest {
     @Test
     @DisplayName("тест: сбор пиццы: креветки, ананас")
     public void testPizzaShrimps() {
-        pizza
+        new PizzaConstructorPage()
                 .clickingToBurger()
                 .clickingToBConstructorPizza()
                 .clickingToSeafood()

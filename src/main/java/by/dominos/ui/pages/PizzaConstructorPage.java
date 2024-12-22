@@ -13,7 +13,7 @@ import java.time.Duration;
 
 
 public class PizzaConstructorPage {
-    final private WebDriver driver;
+    private final WebDriver driver;
 
     public PizzaConstructorPage() {
         this.driver = Singleton.getDriver();
@@ -112,19 +112,17 @@ public class PizzaConstructorPage {
         return this;
     }
 
-    public PizzaConstructorPage clickingToMinusDominosTomatoSauce() {
+    public void clickingToMinusDominosTomatoSauce() {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PizzaConstructorXpath.CLICK_MINUS_DOMINOS_TOMATO_SAUCE_XPATH))).click();
-        return this;
     }
 
-    public PizzaConstructorPage clickingToFriedOnions() {
+    public void clickingToFriedOnions() {
 
         WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.CLICK_FRIED_ONIONS_XPATH));
         new ScrollToElement().scrollToElement(driver, element);
         element.click();
-        return this;
     }
 
     public String mozzarellaCheese() {

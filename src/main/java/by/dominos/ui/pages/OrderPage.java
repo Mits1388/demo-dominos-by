@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class OrderPage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public OrderPage() {
         this.driver = Singleton.getDriver();
