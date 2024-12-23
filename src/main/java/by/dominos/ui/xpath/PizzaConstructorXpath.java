@@ -21,6 +21,6 @@ public class PizzaConstructorXpath {
     public static final String SWEET_PEPPER_XPATH = "//div[text()='Сладкий перец x1']";
     public static final String PINEAPPLE_XPATH = "//div[text()='Ананас x1']";
     public static final String MOZZARELLA_CHEESE_XPATH = "//div[text()='Сыр моцарелла x1']";
-    public static final String DOMINOS_TOMATO_SAUCE_XPATH = "//div[text()='Томатный соус Domino`s x1']";
+    public static final String DOMINOS_TOMATO_SAUCE_XPATH = "//div[text()='Томатный соус Domino's x1']";
     public static final String FRIED_ONIONS_XPATH = "//div[text()='Обжаренный лук x1']";
 }
