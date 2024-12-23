@@ -16,7 +16,6 @@ public class PizzaConstructorPage {
     private final WebDriver driver;
 
     public PizzaConstructorPage() {
-
         this.driver = Singleton.getDriver();
     }
 

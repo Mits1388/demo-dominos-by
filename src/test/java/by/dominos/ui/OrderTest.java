@@ -12,8 +12,7 @@ public class OrderTest {
 
     @BeforeEach
     public void setUp() {
-        HomePage homePage = new HomePage();
-        homePage.open();
+        new HomePage().open();
         page = new OrderPage();
     }
 

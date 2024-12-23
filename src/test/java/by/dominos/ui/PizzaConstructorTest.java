@@ -12,8 +12,8 @@ public class PizzaConstructorTest {
 
     @BeforeEach
     public void setUp() {
-        HomePage homePage = new HomePage();
-        homePage.open();
+
+        new HomePage().open();
         pizza = new PizzaConstructorPage();
     }
 
@@ -57,6 +57,7 @@ public class PizzaConstructorTest {
 
     @AfterEach
     public void tearDown() {
-        Singleton.quit();
+
+        //Singleton.quit();
     }
 }

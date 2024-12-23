@@ -10,6 +10,7 @@ public class SwitchingToSitePage {
     private final WebDriver driver;
 
     public SwitchingToSitePage() {
+
         this.driver = Singleton.getDriver();
     }
 

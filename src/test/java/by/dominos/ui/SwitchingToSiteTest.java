@@ -13,8 +13,7 @@ public class SwitchingToSiteTest {
 
     @BeforeEach
     public void setUp() {
-        HomePage homePage = new HomePage();
-        homePage.open();
+        new HomePage().open();
         switching = new SwitchingToSitePage();
     }
 
