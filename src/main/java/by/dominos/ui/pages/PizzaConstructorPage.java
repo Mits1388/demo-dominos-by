@@ -127,18 +127,6 @@ public class PizzaConstructorPage {
         return this;
     }
 
-    public String mozzarellaCheese() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.MOZZARELLA_CHEESE_XPATH));
-        new ScrollToElement().scrollToElement(driver, element);
-        return element.getText();
-    }
-
-    public String dominosTomatoSauce() {
-        WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.DOMINOS_TOMATO_SAUCE_XPATH));
-        new ScrollToElement().scrollToElement(driver, element);
-        return element.getText();
-    }
-
     public String sweetPepper() {
         WebElement element = driver.findElement(By.xpath(PizzaConstructorXpath.SWEET_PEPPER_XPATH));
         new ScrollToElement().scrollToElement(driver, element);
