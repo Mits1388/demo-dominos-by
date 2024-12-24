@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class DominosApi {
     private static final Logger logger = LogManager.getLogger();
 
-    public ValidatableResponse getResponsePhone(String phone) {
+    public ValidatableResponse getResponse(String phone) {
         logger.info("DominosApi - getResponsePhone");
         ValidatableResponse response =
                 given()

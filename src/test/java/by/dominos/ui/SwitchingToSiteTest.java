@@ -1,19 +1,17 @@
 package by.dominos.ui;
 
 import by.dominos.ui.messages.SwitchingToSiteMessage;
-import by.dominos.ui.pages.HomePage;
 import by.dominos.ui.pages.SwitchingToSitePage;
 import by.dominos.ui.webdriver.Singleton;
 import by.dominos.utils.SwitchToWindow;
 import org.junit.jupiter.api.*;
 
 
-public class SwitchingToSiteTest {
+public class SwitchingToSiteTest extends BaseTest{
     private SwitchingToSitePage switching;
 
     @BeforeEach
-    public void setUp() {
-        new HomePage().open();
+    public void setUpSwitchingToSite() {
         switching = new SwitchingToSitePage();
     }
 
@@ -39,10 +37,5 @@ public class SwitchingToSiteTest {
         switching
                 .clickingToTiktok();
         Assertions.assertEquals(SwitchingToSiteMessage.TIKTOK_LINK, new SwitchToWindow().switchToWindow(Singleton.getDriver()));
-    }
-
-    @AfterEach
-    public void tearDown() {
-        Singleton.quit();
     }
 }

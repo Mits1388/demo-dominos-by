@@ -5,7 +5,7 @@ public enum Phone {
     INCORRECT_PHONE("375298564032"),
     EMPTY_PHONE(" ");
 
-    public final String label;
+    private final String label;
 
     Phone(String label) {
         this.label = label;

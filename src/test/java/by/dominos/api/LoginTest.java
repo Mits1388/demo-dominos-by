@@ -16,7 +16,7 @@ public class LoginTest {
     public void noPhone() {
         logger.info("Начало теста: noPhone() - вход без ввода номера телефона");
         ValidatableResponse response = new DominosApi()
-                .getResponsePhone(String.valueOf(Phone.EMPTY_PHONE.getLabel()));
+                .getResponse(Phone.EMPTY_PHONE.getLabel());
         logger.info("LoginMessage.LOGIN_EMPTY_NUMBER_PHONE = " + LoginMessage.LOGIN_EMPTY_NUMBER_PHONE);
         response
                 .statusCode(400)
@@ -29,7 +29,7 @@ public class LoginTest {
     public void incorrectPhone() {
         logger.info("Начало теста: incorrectPhone() - вход с некоректным номером телефона");
         ValidatableResponse response = new DominosApi()
-                .getResponsePhone(String.valueOf(Phone.INCORRECT_PHONE.getLabel()));
+                .getResponse(Phone.INCORRECT_PHONE.getLabel());
         logger.info("LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE = " + LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE);
         response
                 .statusCode(400)
@@ -42,7 +42,7 @@ public class LoginTest {
     public void correctPhone() {
         logger.info("Начало теста: correctPhone() - вход с коректным номером телефона");
         ValidatableResponse response = new DominosApi()
-                .getResponsePhone(String.valueOf(Phone.CORRECT_PHONE.getLabel()));
+                .getResponse(Phone.CORRECT_PHONE.getLabel());
         logger.info("LoginMessage.LOGIN_CORRECT_NUMBER_PHONE = " + LoginMessage.LOGIN_CORRECT_NUMBER_PHONE);
         response
                 .statusCode(200)

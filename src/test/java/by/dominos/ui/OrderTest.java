@@ -1,18 +1,15 @@
 package by.dominos.ui;
 
 import by.dominos.ui.messages.OrderMessage;
-import by.dominos.ui.pages.HomePage;
 import by.dominos.ui.pages.OrderPage;
-import by.dominos.ui.webdriver.Singleton;
 import org.junit.jupiter.api.*;
 
 
-public class OrderTest {
+public class OrderTest extends BaseTest{
     private OrderPage page;
 
     @BeforeEach
-    public void setUp() {
-        new HomePage().open();
+    public void setUpOrder() {
         page = new OrderPage();
     }
 
@@ -25,12 +22,10 @@ public class OrderTest {
                 .clickInBasket()
                 .clickBasket()
                 .clickClose();
-        Assertions.assertEquals(OrderMessage.ORDER_CHICKEN_WITH_CHAMPIGNONS, page.orderNamePizza());
-        Assertions.assertEquals(OrderMessage.ORDER_SIZE_AND_BASE_PIZZA, page.orderSizeAndBasePizza());
-    }
 
-    @AfterEach
-    public void tearDown() {
-        Singleton.quit();
+        Assertions.assertAll(
+                () -> Assertions.assertEquals(OrderMessage.ORDER_CHICKEN_WITH_CHAMPIGNONS, page.orderNamePizza()),
+                () -> Assertions.assertEquals(OrderMessage.ORDER_SIZE_AND_BASE_PIZZA, page.orderSizeAndBasePizza())
+        );
     }
 }

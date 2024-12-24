@@ -1,5 +1,6 @@
 package by.dominos.ui;
 
+import by.dominos.ui.messages.OrderMessage;
 import by.dominos.ui.messages.PizzaConstructorMessage;
 import by.dominos.ui.pages.HomePage;
 import by.dominos.ui.pages.PizzaConstructorPage;
@@ -7,13 +8,11 @@ import by.dominos.ui.webdriver.Singleton;
 import org.junit.jupiter.api.*;
 
 
-public class PizzaConstructorTest {
+public class PizzaConstructorTest extends BaseTest{
     private PizzaConstructorPage pizza;
 
     @BeforeEach
-    public void setUp() {
-
-        new HomePage().open();
+    public void setUpPizzaConstructor() {
         pizza = new PizzaConstructorPage();
     }
 
@@ -30,15 +29,17 @@ public class PizzaConstructorTest {
                 .clickingToProducts()
                 .clickingToFriedOnions();
 
-        Assertions.assertEquals(PizzaConstructorMessage.CHICKEN_MESSAGE, pizza.chicken());
-        Assertions.assertEquals(PizzaConstructorMessage.SWEET_PEPPER_MESSAGE, pizza.sweetPepper());
-        Assertions.assertEquals(PizzaConstructorMessage.FRIED_ONIONS_MESSAGE, pizza.friedOnions());
+        Assertions.assertAll(
+                () -> Assertions.assertEquals(PizzaConstructorMessage.CHICKEN_MESSAGE, pizza.chicken()),
+                () -> Assertions.assertEquals(PizzaConstructorMessage.SWEET_PEPPER_MESSAGE, pizza.sweetPepper()),
+                () -> Assertions.assertEquals(PizzaConstructorMessage.FRIED_ONIONS_MESSAGE, pizza.friedOnions())
+        );
     }
 
     @Test
     @DisplayName("тест: сбор пиццы: креветки, ананас")
     public void testPizzaShrimps() {
-        new PizzaConstructorPage()
+        pizza
                 .clickingToBurger()
                 .clickingToBConstructorPizza()
                 .clickingToSeafood()
@@ -49,13 +50,10 @@ public class PizzaConstructorTest {
                 .clickingToMinusMozzarellaCheese()
                 .clickingToSauces()
                 .clickingToMinusDominosTomatoSauce();
-        Assertions.assertEquals(PizzaConstructorMessage.SHRIMPS_MESSAGE, pizza.shrimps());
-        Assertions.assertEquals(PizzaConstructorMessage.PINEAPPLE_MESSAGE, pizza.pineapple());
-    }
 
-    @AfterEach
-    public void tearDown() {
-
-        Singleton.quit();
+        Assertions.assertAll(
+                () -> Assertions.assertEquals(PizzaConstructorMessage.SHRIMPS_MESSAGE, pizza.shrimps()),
+                () -> Assertions.assertEquals(PizzaConstructorMessage.PINEAPPLE_MESSAGE, pizza.pineapple())
+        );
     }
 }
