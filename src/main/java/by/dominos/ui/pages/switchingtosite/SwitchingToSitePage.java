@@ -1,7 +1,6 @@
-package by.dominos.ui.pages;
+package by.dominos.ui.pages.switchingtosite;
 
 import by.dominos.ui.webdriver.Singleton;
-import by.dominos.ui.xpath.SwitchingToSiteXpath;
 import by.dominos.utils.ScrollToBoottom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package by.dominos.ui.xpath;
+package by.dominos.ui.pages.switchingtosite;
 
 public class SwitchingToSiteXpath {
     public static final String CLICK_INSTAGRAM_XPATH = "//a[@href='https://www.instagram.com/dominosby/']";

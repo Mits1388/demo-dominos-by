@@ -1,7 +1,7 @@
 package by.dominos.ui;
 
 import by.dominos.ui.messages.SwitchingToSiteMessage;
-import by.dominos.ui.pages.SwitchingToSitePage;
+import by.dominos.ui.pages.switchingtosite.SwitchingToSitePage;
 import by.dominos.ui.webdriver.Singleton;
 import by.dominos.utils.SwitchToWindow;
 import org.junit.jupiter.api.*;

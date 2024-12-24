@@ -1,4 +1,4 @@
-package by.dominos.ui.xpath;
+package by.dominos.ui.pages.pizzaconstructor;
 
 public class PizzaConstructorXpath {
     public static final String CLICK_BURGER_XPATH = "/html/body/div[1]/div/header/div/div[4]";

@@ -1,4 +1,4 @@
-package by.dominos.ui.xpath;
+package by.dominos.ui.pages.order;
 
 public class OrderXpath {
     public static final String SIZE_L_CHICKEN_WITH_CHAMPIGNONS_XPATH = "//*[@id=\"425a3e7e-f158-4519-8f19-7ee1f6f398d8\"]//div[1]//button[2]";

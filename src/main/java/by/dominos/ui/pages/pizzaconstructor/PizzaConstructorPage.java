@@ -1,7 +1,6 @@
-package by.dominos.ui.pages;
+package by.dominos.ui.pages.pizzaconstructor;
 
 import by.dominos.ui.webdriver.Singleton;
-import by.dominos.ui.xpath.PizzaConstructorXpath;
 import by.dominos.utils.ScrollToElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,7 +1,7 @@
 package by.dominos.ui;
 
 import by.dominos.ui.messages.OrderMessage;
-import by.dominos.ui.pages.OrderPage;
+import by.dominos.ui.pages.order.OrderPage;
 import org.junit.jupiter.api.*;
 
 

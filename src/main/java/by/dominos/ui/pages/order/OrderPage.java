@@ -1,6 +1,5 @@
-package by.dominos.ui.pages;
+package by.dominos.ui.pages.order;
 
-import by.dominos.ui.xpath.OrderXpath;
 import by.dominos.ui.webdriver.Singleton;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
