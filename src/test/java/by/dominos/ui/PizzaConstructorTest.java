@@ -1,10 +1,7 @@
 package by.dominos.ui;
 
-import by.dominos.ui.messages.OrderMessage;
 import by.dominos.ui.messages.PizzaConstructorMessage;
-import by.dominos.ui.pages.HomePage;
-import by.dominos.ui.pages.PizzaConstructorPage;
-import by.dominos.ui.webdriver.Singleton;
+import by.dominos.ui.pages.pizzaconstructor.PizzaConstructorPage;
 import org.junit.jupiter.api.*;
 
 
