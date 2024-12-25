@@ -25,28 +25,28 @@ public class LoginTest {
     }
 
     @Test
-    @DisplayName("тест: вход с некоректным номером телефона")
+    @DisplayName("тест: вход с некорректным номером телефона")
     public void incorrectPhone() {
-        logger.info("Начало теста: incorrectPhone() - вход с некоректным номером телефона");
+        logger.info("Начало теста: incorrectPhone() - вход с некорректным номером телефона");
         ValidatableResponse response = new DominosApi()
                 .getResponse(Phone.INCORRECT_PHONE.getLabel());
         logger.info("LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE = " + LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE);
         response
                 .statusCode(400)
                 .body("phone[0]", equalTo(LoginMessage.LOGIN_INCORRECT_NUMBER_PHONE));
-        logger.info("Конец теста: incorrectPhone() - вход с некоректным номером телефона");
+        logger.info("Конец теста: incorrectPhone() - вход с некорректным номером телефона");
     }
 
     @Test
-    @DisplayName("тест: вход с коректным номером телефона")
+    @DisplayName("тест: вход с корректным номером телефона")
     public void correctPhone() {
-        logger.info("Начало теста: correctPhone() - вход с коректным номером телефона");
+        logger.info("Начало теста: correctPhone() - вход с корректным номером телефона");
         ValidatableResponse response = new DominosApi()
                 .getResponse(Phone.CORRECT_PHONE.getLabel());
         logger.info("LoginMessage.LOGIN_CORRECT_NUMBER_PHONE = " + LoginMessage.LOGIN_CORRECT_NUMBER_PHONE);
         response
                 .statusCode(200)
                 .body("text", equalTo(LoginMessage.LOGIN_CORRECT_NUMBER_PHONE));
-        logger.info("Конец теста: correctPhone() - вход с коректным номером телефона");
+        logger.info("Конец теста: correctPhone() - вход с корректным номером телефона");
     }
 }
