@@ -9,13 +9,11 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp() {
-
         new HomePage().open();
     }
 
     @AfterEach
     public void tearDown() {
-
         Singleton.quit();
     }
 }
