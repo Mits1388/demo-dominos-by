@@ -15,7 +15,7 @@ public class OrderTest extends BaseTest{
 
     @Test
     @DisplayName("тест: заказ пиццы цыпленок с шампиньонами")
-    public void OrderPizza() {
+    public void orderPizza() {
         page
                 .clickSizeL()
                 .clickClassicPizza()
